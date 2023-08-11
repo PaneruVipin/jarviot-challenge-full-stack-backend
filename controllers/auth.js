@@ -60,4 +60,5 @@ const googleCallback = async (req, res) => {
   res.redirect(frontendUrl + "?t=" + token);
 };
 
+
 module.exports = { googleRedirect, googleCallback };
