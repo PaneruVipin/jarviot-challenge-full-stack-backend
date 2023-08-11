@@ -9,10 +9,11 @@ const {
   getDocs,
   doc,
   addDoc,
+  setDoc,
 } = require("firebase/firestore");
 const jwt = require("jsonwebtoken");
 
-const googleRedirect = (req, res) => {
+const googleRedirect = (_, res) => {
   const SCOPES = [
     "https://www.googleapis.com/auth/drive.readonly",
     "https://www.googleapis.com/auth/drive.metadata.readonly",
@@ -51,6 +52,13 @@ const googleCallback = async (req, res) => {
     querySnapshot.forEach((doc) => {
       userId = doc.id;
     });
+    await setDoc(
+      doc(db(), "users", userId),
+      {
+        access_token: tokens.access_token,
+      },
+      { merge: true }
+    );
   }
   const appKey = process.env.APP_KEY;
   const token = jwt.sign({ sub: userId }, appKey, {
@@ -59,6 +67,5 @@ const googleCallback = async (req, res) => {
   const frontendUrl = process.env.FRONTEND_BASE_URL;
   res.redirect(frontendUrl + "?t=" + token);
 };
-
 
 module.exports = { googleRedirect, googleCallback };
