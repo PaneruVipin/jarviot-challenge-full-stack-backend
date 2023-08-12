@@ -10,7 +10,7 @@ const getFiles = async (req, res) => {
         Authorization: `Bearer ${user?.access_token}`,
       },
       params: {
-        pageSize: 3,
+        pageSize: 1000,
         pageToken: page,
         fields:
           "files(id,name,mimeType,size,webViewLink,trashed),nextPageToken",
