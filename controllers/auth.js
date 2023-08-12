@@ -71,6 +71,7 @@ const googleCallback = async (req, res) => {
     });
     const frontendUrl = process.env.FRONTEND_BASE_URL;
     res.redirect(frontendUrl + "?t=" + token);
+    
   } catch (e) {
     res.json({ message: "server is currently down. Please try again later" });
   }
