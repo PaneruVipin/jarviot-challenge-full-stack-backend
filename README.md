@@ -6,6 +6,12 @@ Follow these steps to successfully run the program on your local machine.
 
 - [Node.js](https://nodejs.org/): Make sure you have Node.js installed on your computer.
 
+ **Clone the Git Repository:**
+   Clone the project's Git repository using the following command:
+   ```bash
+   git clone https://github.com/PaneruVipin/jarviot-challenge-full-stack-backend.git
+   ```
+
 ## Installation
 
 1. **Install Dependencies:**
