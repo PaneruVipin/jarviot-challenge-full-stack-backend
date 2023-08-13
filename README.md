@@ -6,11 +6,18 @@ Follow these steps to successfully run the program on your local machine.
 
 - [Node.js](https://nodejs.org/): Make sure you have Node.js installed on your computer.
 
- **Clone the Git Repository:**
+## Clone the Repository
+
+1. **Clone the Repository:**
+
    Clone the project's Git repository using the following command:
+   
    ```bash
-   git clone https://github.com/PaneruVipin/jarviot-challenge-full-stack-backend.git
+   git clone [repository_url]
    ```
+   
+Navigate into the cloned repository:
+   
 
 ## Installation
 
@@ -82,4 +89,4 @@ Now you can access the program by opening your web browser and navigating to the
 If you encounter any issues or have questions, feel free to reach out for assistance.
 
 
-This version provides clear step-by-step instructions for running the program and setting up the necessary configurations for Google services and Firebase.
+Replace `[repository_url]` and `[repository_directory]` with the actual repository URL and directory name respectively. This version now includes the instructions to clone the repository before proceeding with the setup steps.
