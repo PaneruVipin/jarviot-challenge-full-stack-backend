@@ -87,6 +87,3 @@ npm start
 Now you can access the program by opening your web browser and navigating to the local URL: http://localhost:4000
 
 If you encounter any issues or have questions, feel free to reach out for assistance.
-
-
-Replace `[repository_url]` and `[repository_directory]` with the actual repository URL and directory name respectively. This version now includes the instructions to clone the repository before proceeding with the setup steps.
