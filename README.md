@@ -13,7 +13,7 @@ Follow these steps to successfully run the program on your local machine.
    Clone the project's Git repository using the following command:
    
    ```bash
-   git clone [repository_url]
+   git clone https://github.com/PaneruVipin/jarviot-challenge-full-stack-backend.git
    ```
    
 Navigate into the cloned repository:
