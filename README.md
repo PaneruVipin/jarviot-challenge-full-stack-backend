@@ -74,6 +74,6 @@ npm start
 Now you can access the program by opening your web browser and navigating to the local URL: http://localhost:4000
 
 If you encounter any issues or have questions, feel free to reach out for assistance.
-```
+
 
 This version provides clear step-by-step instructions for running the program and setting up the necessary configurations for Google services and Firebase.
